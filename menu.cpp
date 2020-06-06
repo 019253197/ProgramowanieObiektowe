@@ -1,4 +1,4 @@
-#include"nag³ówek.h"
+#include"nagÂ³Ã³wek.h"
 #include <iostream>
 #include <cstdlib>
 
@@ -142,7 +142,7 @@ void Options(Array arr)
             cin >> b;
             cout << "Cell[" << a << "][" << b << "]: ";
             cin >> c;
-            if (arr.setValue(a, b, c)){ cout << "Nie istnieje taka komorka! ";    system("PAUSE"); }
+            if (arr.setValue(b, a, c)){ cout << "Nie istnieje taka komorka! ";    system("PAUSE"); }
             break;
         case 2:
             cout << "Saving...";
@@ -193,7 +193,7 @@ int menu(Array arr)
             cin >> a;
             cout << "Number of Kolumn: ";
             cin >> b;
-            if (arr.setSize(a, b)){ cout << "Podane wartoœci mniejsze od 1!"; system("PAUSE");}
+            if (arr.setSize(a, b)){ cout << "Podane wartoÅ“ci mniejsze od 1!"; system("PAUSE");}
             break;
         case 2:
             Options(arr);
